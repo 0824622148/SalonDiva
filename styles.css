@@ -1,0 +1,35 @@
+/* Salon Diva — global styles (ported from Claude Design) */
+html{scroll-behavior:smooth}
+body{margin:0;background:#f8f1ec;color:#2b2326;font-family:'Jost',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#a63e57;text-decoration:none}a:hover{color:#c4566c}
+*{box-sizing:border-box}
+::selection{background:#efc9c4}
+@keyframes sdspin{to{transform:rotate(360deg)}}
+@keyframes sdfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sdfloatm{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sdmarq{to{transform:translateX(-50%)}}
+
+/* Hover states (design "style-hover") */
+.hv-rose:hover{color:#c4566c!important}
+.hv-btn2:hover{background:#a63e57!important;color:#fff!important;transform:translateY(-2px)!important}
+.hv-btn3:hover{background:#a63e57!important;color:#fff!important;transform:translateY(-3px)!important}
+.hv-dark:hover{background:#a63e57!important}
+.hv-card:hover{transform:translateY(-10px)!important;color:#2b2326!important}
+.hv-up6:hover{transform:translateY(-6px)!important}
+.hv-zoom104:hover{transform:scale(1.04)!important}
+.hv-zoom105:hover{transform:scale(1.05)!important}
+.hv-zoom106:hover{transform:scale(1.06)!important}
+
+/* Horizontal scrollers without scrollbars (mobile) */
+.m-scroll{scrollbar-width:none}
+.m-scroll::-webkit-scrollbar{display:none}
+
+/* Desktop vs mobile layout */
+.mobile{display:none}
+@media (max-width:767px){
+  .desktop{display:none}
+  .mobile{display:block}
+  .m-frame{width:100%!important;box-shadow:none!important}
+}
+
+[hidden]{display:none!important}
